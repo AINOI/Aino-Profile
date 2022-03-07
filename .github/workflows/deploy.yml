@@ -3,7 +3,7 @@ name: Deploy
 # 觸發時機，當推送到分支 master 時
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 # 執行的工作
 jobs:
   # 工作名稱
@@ -26,8 +26,6 @@ jobs:
         run: |
           npm install
           npm run build-linux
-        env:
-          VUE_APP_API: ${{ secrets.VUE_APP_API }}
       # 步驟三：部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
