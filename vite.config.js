@@ -14,7 +14,7 @@ module.exports = {
   publicPath: './',
   chainWebpack (config) {
     config.plugin('html').tap(args => {
-      args[0].title = 'Aino’s Profile'
+      args[0].title = 'Ainos Profile'
       return args
     })
   }
