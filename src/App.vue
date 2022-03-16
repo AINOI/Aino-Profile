@@ -10,36 +10,32 @@ window.addEventListener('scroll', () => {
   navScroll.value = (window.scrollY > 0)
 })
 
-const test = document.getElementById('about')
-
-const lastCircle = document.getElementsByClassName('circle:nth-child(6)')
-
 </script>
 
 <template lang="pug">
-#navbar.navbar.navbar-expand-lg.fixed-top.navbar-dark(:class="{navScroll}")
+#navbar.navbar.navbar-expand-lg.fixed-top.navbar-dark(:class="{ navScroll }")
   .container-fluid.px-5.my-2
     .logoBorder
       a.navbar-brand.logoBorderInner(href="#") HOME
     button.navbar-toggler.btn-white(type='button' data-bs-toggle='collapse' data-bs-target='#ainoLink')
       span.navbar-toggler-icon
     #ainoLink.collapse.navbar-collapse.justify-content-end
-        ul.navbar-nav.mb-2.mb-lg-0
-          li.nav-item.ms-5
-            a.nav-link.linkHover(href="#about") ABOUT
-          li.nav-item.ms-5
-            a.nav-link.linkHover(href="#resume") RESUME
-          li.nav-item.ms-5
-            a.nav-link.linkHover(href="#abilities") ABILITES
-          li.nav-item.ms-5
-            a.nav-link.linkHover(href="#portfolio") PROTFOLIO
-          li.nav-item.ms-5
-            a.nav-link.linkHover(href="#contact") CONTACT
-section#home(:class="{scroll}")
+      ul.navbar-nav.mb-2.mb-lg-0
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#about") ABOUT
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#resume") RESUME
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#abilities") ABILITES
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#portfolio") PROTFOLIO
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#contact") CONTACT
+section#home(:class="{ scroll }")
   .titleBox
     .titleText
-      p.text-center(v-if='!this.scroll') Aino Studio
-      p.text-center(v-if='this.scroll') Web Designer
+      p.text-center(v-if='!scroll') Aino Studio
+      p.text-center(v-if='scroll') Web Designer
   .minebg
   .circleGroup
     .circle
@@ -65,7 +61,7 @@ section#about
         .col-12.d-flex
           a.profile-btn.mx-3(href="https://github.com/AINOI" target="_blank")
             i.bi.bi-github
-          a.profile-btn.mx-3(href="mailto: aino30274@gmail.com") 
+          a.profile-btn.mx-3(href="mailto: aino30274@gmail.com")
             i.bi.bi-envelope-fill
 section#resume
   .container
@@ -98,14 +94,10 @@ section#contact
             i.bi.bi-github
           a.profile-btn.mx-3(href="https://www.facebook.com" target="_blank")
             i.bi.bi-facebook
-          a.profile-btn.mx-3(href="mailto: aino30274@gmail.com") 
+          a.profile-btn.mx-3(href="mailto: aino30274@gmail.com")
             i.bi.bi-envelope-fill
       .col-1.col-sm-2
 footer#footer
   .container-fluid
     .text-center.footer-copyright Copyright © 2022 Aino Studio. All rights reserved.
 </template>
-
-<style>
-
-</style>
