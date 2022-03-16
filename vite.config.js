@@ -10,3 +10,12 @@ export default defineConfig({
     alias: { '@/': `${path.resolve(__dirname, 'src')}/` }
   }
 })
+module.exports = {
+  publicPath: './',
+  chainWebpack (config) {
+    config.plugin('html').tap(args => {
+      args[0].title = 'Aino’s Profile'
+      return args
+    })
+  }
+}
