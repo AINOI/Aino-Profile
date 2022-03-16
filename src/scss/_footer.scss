@@ -1,0 +1,16 @@
+#footer {
+  background: $primary;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  .footer-copyright {
+    color: white;
+    font-size: 14px;
+  }
+}
+
+@include sm {
+  .footer-copyright {
+    font-size: 24px !important;
+  }
+}

@@ -1,0 +1,12 @@
+#abilities {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .title {
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 64px;
+  }
+}

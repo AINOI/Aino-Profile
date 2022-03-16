@@ -1,0 +1,60 @@
+#contact {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  background: url(../assets/library.png)fixed center/cover;
+  .position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .board {
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    .contact-title {
+      font-size: 48px;
+      text-align: center;
+      position: relative;
+      &::before {
+        content: '';
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom: 3px solid $second;
+      }
+    }
+    .contact-text {
+      font-size: 18px;
+      text-align: center;
+    }
+    .profile-btn {
+      border: none;
+      height: 50px;
+      width: 50px;
+      background: transparent;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      i {
+        font-size: 36px;
+        color: #000;
+        filter: drop-shadow(2px 2px 0px transparent);
+        transition: all 0.3s;
+      }
+      &:hover i {
+        filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.5));
+      }
+    }
+  }
+}
+@include sm {
+  .contact-text {
+    font-size: 24px !important;
+  }
+}
