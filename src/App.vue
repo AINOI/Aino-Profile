@@ -24,9 +24,9 @@ window.addEventListener('scroll', () => {
         li.nav-item.ms-5
           a.nav-link.linkHover(href="#about") ABOUT
         li.nav-item.ms-5
-          a.nav-link.linkHover(href="#resume") RESUME
-        li.nav-item.ms-5
           a.nav-link.linkHover(href="#abilities") ABILITES
+        li.nav-item.ms-5
+          a.nav-link.linkHover(href="#resume") RESUME
         li.nav-item.ms-5
           a.nav-link.linkHover(href="#portfolio") PROTFOLIO
         li.nav-item.ms-5
@@ -45,14 +45,14 @@ section#home(:class="{ scroll }")
     .circle
     .circle
 section#about
-  .container.mb-5.mb-md-0
+  .container.mb-5
     .row
       .col-12
         .title ABOUT ME
       .col-12.col-md-6.my-5
         .img-box
           img(src="./assets/self.jpg")
-      .col-12.col-md-6.my-0.my-md-5.ps-5
+      .col-12.col-md-6.my-0.my-md-5.px-3
         .col-12
           .profile-title.my-3 許尚彬 SHANG BIN, HSU
           .my-3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque asperiores animi, id eligendi mollitia repellat velit expedita consequatur sint soluta, beatae fuga culpa totam nemo nam, sunt facilis tempore maiores.
@@ -63,21 +63,121 @@ section#about
             i.bi.bi-github
           a.profile-btn.mx-3(href="mailto: aino30274@gmail.com")
             i.bi.bi-envelope-fill
+section#abilities
+  .container.mb-5
+    .row
+      .col-12
+        .title ABILITIES
+    .row.mt-5
+      .col-12.col-md-4.my-2.my-md-0
+        .card
+          .card-body.ability-card.mt-2.mb-5
+            .card-title.mb-4 DESIGN
+            .card-icon
+              i.bi.bi-palette-fill
+            .card-text.mt-4
+              p Photoshop
+              p Illustrator
+      .col-12.col-md-4.my-2.my-md-0
+        .card
+          .card-body.ability-card.mt-2.mb-5
+            .card-title.mb-4 FRONTEND
+            .card-icon
+              i.bi.bi-file-earmark-code-fill
+            ul.card-text.mt-4
+              li HTML/CSS/SCSS
+              li Bootstrap/Tailwind
+              li JavaScript(ES6)/jQuery
+              li Vue.js
+      .col-12.col-md-4.my-2.my-md-0
+        .card
+          .card-body.ability-card.mt-2.mb-5
+            .card-title.mb-4 BACKEND
+            .card-icon
+              i.bi.bi-server
+            ul.card-text.mt-4
+              li Node.js
+              li npm
+              li Express.js
+              li MongoDB
 section#resume
-  .container
+  .container.mb-5
     .row.h-100
       .col-12
         .title RESUME
-section#abilities
-  .container
-    .row.h-100
-      .col-12
-        .title ABILITIES
 section#portfolio
   .container
-    .row.h-100
+    .row
       .col-12
         .title PORTFOLIO
+    .row.px-3
+      .col-12.mx-auto.my-5.card-filter
+        .card
+          .card-body
+            .row.d-flex.justify-content-center
+              .col-lg-5.my-5.mx-4.px-2
+                .monoaka-sample
+                  img(src="./assets/Monoaka-img.png")
+                  .monoaka-bg-filter
+                    a.btn.px-2.py-1(href="#") Go to Page
+              .col-lg-5.my-5.mx-4
+                .row
+                  .col-12.px-2
+                    .monoaka-title Mono's Archive
+                    .monoaka-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quod recusandae itaque voluptatem assumenda alias exercitationem natus corporis perferendis pariatur dolore totam cumque quibusdam beatae enim quae, voluptas nihil voluptatum!
+                  .col-12.monoaka-tab.mt-5
+                    .monoaka-tab-item scss
+                    .monoaka-tab-item Axios
+                    .monoaka-tab-item Vue.js
+                    .monoaka-tab-item Node.js
+              .col-lg-5.my-5.mx-4.px-2
+                ul 前端
+                  li Vue 前端框架搭配 Bootstrap-Vue UI框架
+                  li Vuex 管理前端狀態
+                  li Axios 向後端伺服器請求資料
+                  li 註冊與登入功能
+                  li 文章發布、管理及瀏覽功能
+              .col-lg-5.my-5.mx-4.px-2
+                ul 後端
+                  li Node.js 搭配 Express.js 建立伺服器
+                  li MongoDB 作為後端資料庫，會員管理、文章管理、回報管理等等。
+    .row.px-3
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
+      .col-lg-4.px-lg-2.mb-5
+        .card
+          img.card-img-top(src="./assets/room.png")
+          .card-body
+            .card-title 番茄鐘 Pomodoro
+            .card-text 參考他人的設計稿，並且以Vue cli開發番茄鐘網站，使用了Vuex、PWA技術及chart.js套件。
 section#contact
   .container-fluid.h-100.position
     .row.w-100
