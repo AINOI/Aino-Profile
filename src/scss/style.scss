@@ -23,6 +23,10 @@ body {
   height: 56px;
   border: 4px solid transparent !important;
   background-clip: content-box;
+  &:hover {
+    background: #777777;
+    background-clip: content-box;
+  }
 }
 
 .scroll {

@@ -1,6 +1,5 @@
 #resume {
   width: 100vw;
-  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -8,5 +7,56 @@
     border-bottom: 2px solid black;
     text-align: center;
     font-size: 64px;
+  }
+  .resume-title {
+    font-size: 36px;
+  }
+  .resume-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .resume-board {
+    position: relative;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    p {
+      background: $wood;
+      border-radius: 10px;
+      color: white;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem !important;
+      margin-top: 1rem !important;
+    }
+    ul {
+      margin-top: 2rem !important;
+      font-size: 24px;
+      font-weight: bold;
+      li {
+        font-size: 18px;
+        font-weight: lighter;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+    }
+    .language-ul {
+      margin-top: 0 !important;
+    }
+    &::before {
+      content: '';
+      width: 5px;
+      height: 100%;
+      background: $wood;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.5s;
+    }
+    &:hover {
+      &::before {
+        background: rgb(139, 57, 57);
+      }
+    }
   }
 }
