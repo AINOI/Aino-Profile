@@ -107,41 +107,42 @@ section#resume
     .row
       .col-12
         .title RESUME
-      .col-12.mt-5
-        .row
-          .col-lg-6.my-3
-            .resume-title Education
-            .resume-board.px-3
-              .resume-subtitle 勞動部勞動力發展署 泰山前端網頁開發技術班
-              p 2021 / 09 ~ 2022 / 03
-              ul 學習技術
-                li HTML/CSS/Bootstrap/SASS
-                li JavaScript/jQuery/Vue.js
-                li Node.js/Express.js/MongoDB/Git
-            .resume-board.px-3
-              .resume-subtitle 中華大學 應用日語學系
-              p 2015 / 09 ~ 2019 / 06
-              ul
-                li 主修應用日語學系，求學期間積極精進自己的語言能力，並在大二時期考取日文檢定 N2 證照。
-          .col-lg-6.my-3
-            .resume-title Work Experience
+      .row.px-3.px-lg-0
+        .col-12.mt-5
+          .row
+            .col-lg-6.my-3
+              .resume-title Education
               .resume-board.px-3
-                .resume-subtitle 苗栗縣 三灣國民小學
+                .resume-subtitle 勞動部勞動力發展署 泰山前端網頁開發技術班
+                p 2021 / 09 ~ 2022 / 03
+                ul 學習技術
+                  li HTML/CSS/Bootstrap/SASS
+                  li JavaScript/jQuery/Vue.js
+                  li Node.js/Express.js/MongoDB/Git
+              .resume-board.px-3
+                .resume-subtitle 中華大學 應用日語學系
+                p 2015 / 09 ~ 2019 / 06
+                ul
+                  li 主修應用日語學系，求學期間積極精進自己的語言能力，並在大二時期考取日文檢定 N2 證照。
+            .col-lg-6.my-3
+              .resume-title Work Experience
+                .resume-board.px-3
+                  .resume-subtitle 苗栗縣 三灣國民小學
+                  p 2021 / 02 ~ 2021 / 07
+                  ul
+                    li 擔任數學及自然科任教師
+              .resume-board.px-3
+                .resume-subtitle 苗栗縣 照南國民小學
                 p 2021 / 02 ~ 2021 / 07
                 ul
-                  li 擔任數學及自然科任教師
-            .resume-board.px-3
-              .resume-subtitle 苗栗縣 照南國民小學
-              p 2021 / 02 ~ 2021 / 07
-              ul
-                li 擔任課後輔導教師
-            .resume-title Language Skill
-              .resume-board.px-3
-                ul.language-ul Chinese
-                  li Native Language
-              .resume-board.px-3
-                ul.language-ul Japanese
-                  li JLPT N2
+                  li 擔任課後輔導教師
+              .resume-title Language Skill
+                .resume-board.px-3
+                  ul.language-ul Chinese
+                    li Native Language
+                .resume-board.px-3
+                  ul.language-ul Japanese
+                    li JLPT N2
 section#portfolio
   .container
     .row
@@ -291,7 +292,7 @@ section#contact
         .col-12.mt-5.d-flex.justify-content-center
           a.profile-btn.mx-3(href="https://github.com/AINOI" target="_blank")
             i.bi.bi-github
-          a.profile-btn.mx-3(href="https://www.facebook.com" target="_blank")
+          a.profile-btn.mx-3(href="https://www.facebook.com/profile.php?id=100004781504538" target="_blank")
             i.bi.bi-facebook
           a.profile-btn.mx-3(href="mailto: aino30274@gmail.com")
             i.bi.bi-envelope-fill
