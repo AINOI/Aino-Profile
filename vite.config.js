@@ -1,21 +1,23 @@
-import { defineConfig } from 'vite'
+import { defineConfig, Plugin } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from "path"
+import { createHtmlPlugin } from 'vite-plugin-html'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),
+    createHtmlPlugin({
+      minify: false,
+      inject: {
+        data: {
+          title: "Aino's Profile",
+          injectScript: `<script src="./inject.js"></script>`
+        }
+      }
+    })
+  ],
   base: './',
   resolve: {
     alias: { '@/': `${path.resolve(__dirname, 'src')}/` }
   }
 })
-module.exports = {
-  publicPath: './',
-  chainWebpack (config) {
-    config.plugin('html').tap(args => {
-      args[0].title = 'Ainos Profile'
-      return args
-    })
-  }
-}
